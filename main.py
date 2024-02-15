@@ -9,11 +9,15 @@ screen.setup(width=600, height=600)
 screen.tracer(0)
 
 p_turtle = Player()
+car = CarManager()
 
 screen.listen()
-screen.onkey(p_turtle.move_turtle , "Up")
+screen.onkey(p_turtle.move_turtle, "Up")
 
 game_is_on = True
 while game_is_on:
     time.sleep(0.1)
     screen.update()
+
+    car.set_car()
+    car.move_car()
