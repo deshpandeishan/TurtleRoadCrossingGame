@@ -11,7 +11,12 @@ class Scoreboard(Turtle):
         self.display_level()
 
     def display_level(self):
+        turtle.clear()
         turtle.hideturtle()
         turtle.penup()
         turtle.goto(-280, 250)
-        turtle.write(f"Level: {self.level}", font=("JetBrains Mono", 25, "normal"))
+        turtle.write(f"Level: {self.level}", font=FONT)
+
+    def increase_level(self):
+        self.level += 1
+        self.display_level()

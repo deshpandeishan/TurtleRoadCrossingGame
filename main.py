@@ -30,5 +30,6 @@ while game_is_on:
     if p_turtle.finish_line():
         p_turtle.send_turtle()
         car.increase_speed()
+        scoreboard.increase_level()
 
 # screen.exitonclick()
