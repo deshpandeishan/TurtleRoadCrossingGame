@@ -10,6 +10,7 @@ screen.tracer(0)
 
 p_turtle = Player()
 car = CarManager()
+scoreboard = Scoreboard()
 
 screen.listen()
 screen.onkey(p_turtle.move_turtle, "Up")
