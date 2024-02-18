@@ -21,3 +21,13 @@ while game_is_on:
 
     car.set_car()
     car.move_car()
+
+    for vehicle in car.cars:
+        if vehicle.distance(p_turtle) < 20:
+            game_is_on = False
+
+    if p_turtle.finish_line():
+        p_turtle.send_turtle()
+
+
+# screen.exitonclick()

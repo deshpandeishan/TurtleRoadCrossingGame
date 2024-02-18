@@ -18,3 +18,10 @@ class Player(Turtle):
     def move_turtle(self):
         self.fd(MOVE_DISTANCE)
 
+    def finish_line(self):
+        y_cor = self.ycor()
+        if y_cor > FINISH_LINE_Y:
+            print("Turtle has reached to the other side of the screen.")
+            return True
+        else:
+            return False
